@@ -1,0 +1,44 @@
+{
+  "name": "bondflow-contracts",
+  "version": "1.0.0",
+  "description": "Cross-chain bond trading platform with secure smart contracts and Oracle-based pricing",
+  "main": "src/BondFlowDApp.ts",
+  "scripts": {
+    "compile": "solc contracts/*.sol",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.ts",
+    "build": "tsc",
+    "lint": "eslint src/"
+  },
+  "keywords": [
+    "blockchain",
+    "defi",
+    "bonds",
+    "solidity",
+    "ethereum",
+    "web3",
+    "smart-contracts",
+    "cross-chain",
+    "oracle"
+  ],
+  "author": "arpit2222",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^6.0.0",
+    "@openzeppelin/contracts": "^4.9.0",
+    "@chainlink/contracts": "^0.8.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@types/ethers": "^6.0.0",
+    "hardhat": "^2.17.0",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
